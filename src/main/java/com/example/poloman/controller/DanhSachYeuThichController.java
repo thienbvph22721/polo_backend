@@ -1,0 +1,39 @@
+package com.example.poloman.controller;
+
+
+import com.example.poloman.entity.ChatLieu;
+import com.example.poloman.entity.ChucVu;
+import com.example.poloman.entity.DanhSachYeuThich;
+import com.example.poloman.entity.DongSP;
+import com.example.poloman.service.ChatLieuService;
+import com.example.poloman.service.DanhSachYeuThichService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/danhsachyeuthich")
+public class DanhSachYeuThichController {
+
+    @Autowired
+    private DanhSachYeuThichService danhSachYeuThichService;
+
+    @GetMapping("/getAll")
+    public List<DanhSachYeuThich> getAll() {
+        return danhSachYeuThichService.getAll();
+    }
+
+    @PostMapping("/add")
+    public ResponseEntity<?> add(@RequestBody DanhSachYeuThich danhSachYeuThich){
+        danhSachYeuThichService.save(danhSachYeuThich);
+        return ResponseEntity.ok(danhSachYeuThich);
+    }
+
+    @PutMapping("/update/{madanhsach}")
+    public ResponseEntity<?> update(@PathVariable Integer madanhsach, @RequestBody DanhSachYeuThich danhSachYeuThich) {
+        danhSachYeuThichService.save(danhSachYeuThich);
+        return ResponseEntity.ok(danhSachYeuThich);
+    }
+}
