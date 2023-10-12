@@ -11,4 +11,6 @@ public interface SizeService {
 
     Size save(Size size);
 
+    void delete(Integer masize);
+
 }

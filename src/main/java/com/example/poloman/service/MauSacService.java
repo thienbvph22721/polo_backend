@@ -11,4 +11,6 @@ public interface MauSacService {
 
     MauSac save(MauSac mauSac);
 
+    void delete(Integer mamausac);
+
 }

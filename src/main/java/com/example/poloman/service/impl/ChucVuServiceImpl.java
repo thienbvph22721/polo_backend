@@ -23,4 +23,10 @@ public class ChucVuServiceImpl implements ChucVuService {
     public ChucVu save(ChucVu chucVu) {
         return chucVuRepository.save(chucVu);
     }
+
+    @Override
+    public void delete(Integer machucvu) {
+        chucVuRepository.deleteById(machucvu);
+
+    }
 }

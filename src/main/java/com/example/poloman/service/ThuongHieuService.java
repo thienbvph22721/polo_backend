@@ -11,5 +11,6 @@ public interface ThuongHieuService {
 
     ThuongHieu save(ThuongHieu thuongHieu);
 
+    void delete(Integer mathuonghieu);
 
 }

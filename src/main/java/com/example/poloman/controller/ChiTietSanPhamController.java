@@ -34,4 +34,9 @@ public class ChiTietSanPhamController {
         return ResponseEntity.ok(chiTietSanPham);
     }
 
+    @DeleteMapping("delete/{mactsp}")
+    public void delete(@PathVariable Integer mactsp) {
+        chiTietSanPhamService.delete(mactsp);
+    }
+
 }

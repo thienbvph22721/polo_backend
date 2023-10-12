@@ -33,4 +33,9 @@ public class ThuongHieuController {
         thuongHieuService.save(thuongHieu);
         return ResponseEntity.ok(thuongHieu);
     }
+
+    @DeleteMapping("delete/{mathuonghieu}")
+    public void delete(@PathVariable Integer mathuonghieu) {
+        thuongHieuService.delete(mathuonghieu);
+    }
 }

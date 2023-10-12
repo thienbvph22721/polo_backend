@@ -33,4 +33,9 @@ public class HoaDonController {
         return ResponseEntity.ok(hoaDon);
     }
 
+    @DeleteMapping("delete/{mahoadon}")
+    public void delete(@PathVariable Integer mahoadon) {
+        hoaDonService.delete(mahoadon);
+    }
+
 }

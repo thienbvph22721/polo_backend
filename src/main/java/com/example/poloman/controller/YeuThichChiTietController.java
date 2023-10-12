@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/yeuthichchitiet")
@@ -30,11 +31,15 @@ public class YeuThichChiTietController {
     }
 
     @PutMapping("/update/{madanhsach}")
-    public ResponseEntity<?> update(@PathVariable Integer madanhsach, @RequestBody YeuThichChiTiet yeuThichChiTiet) {
+    public ResponseEntity<?> update(@PathVariable UUID madanhsach, @RequestBody YeuThichChiTiet yeuThichChiTiet) {
         yeuThichChiTietService.save(yeuThichChiTiet);
         return ResponseEntity.ok(yeuThichChiTiet);
     }
-    //abcxyz
+
+    @DeleteMapping("delete/{madanhsach}")
+    public void delete(@PathVariable UUID madanhsach) {
+        yeuThichChiTietService.delete(madanhsach);
+    }
 
 
 }

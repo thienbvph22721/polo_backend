@@ -23,4 +23,10 @@ public class HoaDonServiceImpl implements HoaDonService {
     public HoaDon save(HoaDon hoaDon) {
         return hoaDonRepository.save(hoaDon);
     }
+
+    @Override
+    public void delete(Integer mahoadon) {
+        hoaDonRepository.deleteById(mahoadon);
+
+    }
 }

@@ -11,4 +11,6 @@ public interface HoaDonService {
 
     HoaDon save(HoaDon hoaDon);
 
+    void delete(Integer mahoadon);
+
 }

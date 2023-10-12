@@ -23,4 +23,10 @@ public class KhachHangServiceImpl implements KhachHangService {
     public KhachHang save(KhachHang khachHang) {
         return khachHangRepository.save(khachHang);
     }
+
+    @Override
+    public void delete(Integer makhachhang) {
+        khachHangRepository.deleteById(makhachhang);
+
+    }
 }

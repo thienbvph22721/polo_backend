@@ -23,4 +23,10 @@ public class SanPhamServiceImpl implements SanPhamService {
     public SanPham save(SanPham sanPham) {
         return sanPhamRepository.save(sanPham);
     }
+
+    @Override
+    public void delete(Integer masanpham) {
+        sanPhamRepository.deleteById(masanpham);
+
+    }
 }

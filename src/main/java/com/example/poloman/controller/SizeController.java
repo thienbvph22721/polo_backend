@@ -32,4 +32,9 @@ public class SizeController {
         sizeService.save(size);
         return ResponseEntity.ok(size);
     }
+
+    @DeleteMapping("delete/{masize}")
+    public void delete(@PathVariable Integer masize) {
+        sizeService.delete(masize);
+    }
 }

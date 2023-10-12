@@ -23,4 +23,10 @@ public class HoaDonChiTietServiceImpl implements HoaDonChiTietService {
     public HoaDonChiTiet save(HoaDonChiTiet hoaDonChiTiet) {
         return hoaDonChiTietRepository.save(hoaDonChiTiet);
     }
+
+    @Override
+    public void delete(Integer mahoadon) {
+        hoaDonChiTietRepository.deleteById(mahoadon);
+
+    }
 }

@@ -11,4 +11,6 @@ public interface GioHangService {
 
     GioHang save(GioHang gioHang);
 
+    void delete(Integer magiohang);
+
 }

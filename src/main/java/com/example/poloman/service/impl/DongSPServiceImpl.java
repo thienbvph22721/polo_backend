@@ -23,4 +23,10 @@ public class DongSPServiceImpl implements DongSPService {
     public DongSP save(DongSP dongSP) {
         return dongSPRepository.save(dongSP);
     }
+
+    @Override
+    public void delete(Integer madongsp) {
+        dongSPRepository.deleteById(madongsp);
+
+    }
 }

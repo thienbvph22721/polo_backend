@@ -11,4 +11,6 @@ public interface HoaDonChiTietService {
 
     HoaDonChiTiet save(HoaDonChiTiet hoaDonChiTiet);
 
+    void delete(Integer mahoadon);
+
 }

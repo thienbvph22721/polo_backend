@@ -32,4 +32,9 @@ public class KhachHangController {
         khachHangService.save(khachHang);
         return ResponseEntity.ok(khachHang);
     }
+
+    @DeleteMapping("delete/{makhachhang}")
+    public void delete(@PathVariable Integer makhachhang) {
+        khachHangService.delete(makhachhang);
+    }
 }

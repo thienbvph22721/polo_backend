@@ -34,5 +34,10 @@ public class ChucVuController {
         return ResponseEntity.ok(chucVu);
     }
 
+    @DeleteMapping("delete/{machucvu}")
+    public void delete(@PathVariable Integer machucvu) {
+        chucVuService.delete(machucvu);
+    }
+
 
 }

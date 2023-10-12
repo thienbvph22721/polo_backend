@@ -4,6 +4,7 @@ import com.example.poloman.entity.ChatLieu;
 import com.example.poloman.entity.DanhSachYeuThich;
 
 import java.util.List;
+import java.util.UUID;
 
 public interface DanhSachYeuThichService {
 
@@ -11,5 +12,6 @@ public interface DanhSachYeuThichService {
 
     DanhSachYeuThich save(DanhSachYeuThich danhSachYeuThich);
 
+    void delete(UUID madanhsach);
 
 }

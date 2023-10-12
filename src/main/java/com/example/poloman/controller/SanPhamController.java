@@ -34,4 +34,9 @@ public class SanPhamController {
         sanPhamService.save(sanPham);
         return ResponseEntity.ok(sanPham);
     }
+
+    @DeleteMapping("delete/{masanpham}")
+    public void delete(@PathVariable Integer masanpham) {
+        sanPhamService.delete(masanpham);
+    }
 }

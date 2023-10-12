@@ -24,4 +24,10 @@ public class ThuongHieuServiceImpl implements ThuongHieuService {
     public ThuongHieu save(ThuongHieu thuongHieu) {
         return thuongHieuRepository.save(thuongHieu);
     }
+
+    @Override
+    public void delete(Integer mathuonghieu) {
+        thuongHieuRepository.deleteById(mathuonghieu);
+
+    }
 }

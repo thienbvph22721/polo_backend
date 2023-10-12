@@ -11,4 +11,6 @@ public interface KhachHangService {
 
     KhachHang save(KhachHang khachHang);
 
+    void delete(Integer makhachhang);
+
 }

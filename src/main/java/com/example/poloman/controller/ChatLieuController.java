@@ -32,6 +32,12 @@ public class ChatLieuController {
         return ResponseEntity.ok(chatLieu);
     }
 
+    @DeleteMapping("delete/{machatlieu}")
+    public void delete(@PathVariable Integer machatlieu) {
+        chatLieuService.delete(machatlieu);
+    }
+
+    //abcxyz123
 
 
 }

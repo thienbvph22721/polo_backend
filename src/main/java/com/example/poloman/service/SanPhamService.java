@@ -11,5 +11,6 @@ public interface SanPhamService {
 
     SanPham save(SanPham sanPham);
 
+    void delete(Integer masanpham);
 
 }

@@ -32,4 +32,10 @@ public class NhanVienController {
         nhanVienService.save(nhanVien);
         return ResponseEntity.ok(nhanVien);
     }
+
+
+    @DeleteMapping("delete/{manhanvien}")
+    public void delete(@PathVariable Integer manhanvien) {
+        nhanVienService.delete(manhanvien);
+    }
 }

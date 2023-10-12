@@ -23,4 +23,10 @@ public class GioHangChiTietServiceImpl implements GioHangChiTietService {
     public GioHangChiTiet save(GioHangChiTiet gioHangChiTiet) {
         return gioHangChiTietRepository.save(gioHangChiTiet);
     }
+
+    @Override
+    public void delete(Integer magiohang) {
+        gioHangChiTietRepository.deleteById(magiohang);
+
+    }
 }

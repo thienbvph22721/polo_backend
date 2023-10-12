@@ -23,4 +23,10 @@ public class NhanVienServiceImpl implements NhanVienService {
     public NhanVien save(NhanVien nhanVien) {
         return nhanVienRepository.save(nhanVien);
     }
+
+    @Override
+    public void delete(Integer manhanvien) {
+        nhanVienRepository.deleteById(manhanvien);
+
+    }
 }

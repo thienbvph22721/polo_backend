@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class DanhSachYeuThichServiceImpl implements DanhSachYeuThichService {
@@ -22,5 +23,11 @@ public class DanhSachYeuThichServiceImpl implements DanhSachYeuThichService {
     @Override
     public DanhSachYeuThich save(DanhSachYeuThich danhSachYeuThich) {
         return danhSachYeuThichRepository.save(danhSachYeuThich);
+    }
+
+    @Override
+    public void delete(UUID madanhsach) {
+        danhSachYeuThichRepository.deleteById(madanhsach);
+
     }
 }

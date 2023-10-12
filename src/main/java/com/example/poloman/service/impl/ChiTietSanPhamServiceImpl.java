@@ -23,4 +23,10 @@ public class ChiTietSanPhamServiceImpl implements ChiTietSanPhamService {
     public ChiTietSanPham save(ChiTietSanPham chiTietSanPham) {
         return chiTietSanPhamRepository.save(chiTietSanPham);
     }
+
+    @Override
+    public void delete(Integer mactsp) {
+        chiTietSanPhamRepository.deleteById(mactsp);
+
+    }
 }

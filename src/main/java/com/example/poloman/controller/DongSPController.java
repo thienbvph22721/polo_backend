@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/dongsp")
@@ -33,6 +34,11 @@ public class DongSPController {
     public ResponseEntity<?> update(@PathVariable Integer madongsp, @RequestBody DongSP dongSP) {
         dongSPService.save(dongSP);
         return ResponseEntity.ok(dongSP);
+    }
+
+    @DeleteMapping("delete/{madongsp}")
+    public void delete(@PathVariable Integer madongsp) {
+        dongSPService.delete(madongsp);
     }
 
 }

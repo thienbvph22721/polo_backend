@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/khuyenmai")
@@ -29,8 +30,13 @@ public class KhuyenMaiController {
     }
 
     @PutMapping("/update/{id}")
-    public ResponseEntity<?> update(@PathVariable Integer id, @RequestBody KhuyenMai khuyenMai) {
+    public ResponseEntity<?> update(@PathVariable UUID id, @RequestBody KhuyenMai khuyenMai) {
         khuyenMaiService.save(khuyenMai);
         return ResponseEntity.ok(khuyenMai);
+    }
+
+    @DeleteMapping("delete/{id}")
+    public void delete(@PathVariable UUID id) {
+        khuyenMaiService.delete(id);
     }
 }

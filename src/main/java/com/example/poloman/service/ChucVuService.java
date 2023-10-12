@@ -11,4 +11,6 @@ public interface ChucVuService {
 
     ChucVu save(ChucVu chucVu);
 
+    void delete(Integer machucvu);
+
 }

@@ -23,4 +23,10 @@ public class SizeServiceImpl implements SizeService {
     public Size save(Size size) {
         return sizeRepository.save(size);
     }
+
+    @Override
+    public void delete(Integer masize) {
+        sizeRepository.deleteById(masize);
+
+    }
 }

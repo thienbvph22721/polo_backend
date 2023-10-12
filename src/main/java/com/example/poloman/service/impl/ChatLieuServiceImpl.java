@@ -23,4 +23,9 @@ public class ChatLieuServiceImpl implements ChatLieuService {
     public ChatLieu save(ChatLieu chatLieu) {
         return chatLieuRepository.save(chatLieu);
     }
+
+    @Override
+    public void delete(Integer machatlieu) {
+        chatLieuRepository.deleteById(machatlieu);
+    }
 }

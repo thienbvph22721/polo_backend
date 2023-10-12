@@ -35,4 +35,8 @@ public class GioHangChiTietController {
         return ResponseEntity.ok(gioHangChiTiet);
     }
 
+    @DeleteMapping("delete/{magiohang}")
+    public void delete(@PathVariable Integer magiohang) {
+        gioHangChiTietService.delete(magiohang);
+    }
 }

@@ -11,4 +11,6 @@ public interface ChiTietSanPhamService {
 
     ChiTietSanPham save(ChiTietSanPham chiTietSanPham);
 
+    void delete(Integer mactsp);
+
 }

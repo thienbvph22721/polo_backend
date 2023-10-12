@@ -11,5 +11,6 @@ public interface DongSPService {
 
     DongSP save(DongSP dongSP);
 
+    void delete(Integer madongsp);
 
 }

@@ -11,4 +11,6 @@ public interface GioHangChiTietService {
 
     GioHangChiTiet save(GioHangChiTiet gioHangChiTiet);
 
+    void delete(Integer magiohang);
+
 }

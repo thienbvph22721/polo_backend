@@ -11,4 +11,6 @@ public interface NhanVienService {
 
     NhanVien save(NhanVien nhanVien);
 
+    void delete(Integer manhanvien);
+
 }
