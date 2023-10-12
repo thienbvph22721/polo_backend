@@ -28,6 +28,5 @@ public class YeuThichChiTietServiceImpl implements YeuThichChiTietService {
     @Override
     public void delete(UUID madanhsach) {
         yeuThichChiTietRepository.deleteById(madanhsach);
-
     }
 }

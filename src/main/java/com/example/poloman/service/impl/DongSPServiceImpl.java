@@ -27,6 +27,5 @@ public class DongSPServiceImpl implements DongSPService {
     @Override
     public void delete(Integer madongsp) {
         dongSPRepository.deleteById(madongsp);
-
     }
 }

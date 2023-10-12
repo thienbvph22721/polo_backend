@@ -28,6 +28,5 @@ public class ThuongHieuServiceImpl implements ThuongHieuService {
     @Override
     public void delete(Integer mathuonghieu) {
         thuongHieuRepository.deleteById(mathuonghieu);
-
     }
 }

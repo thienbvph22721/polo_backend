@@ -27,6 +27,5 @@ public class KhachHangServiceImpl implements KhachHangService {
     @Override
     public void delete(Integer makhachhang) {
         khachHangRepository.deleteById(makhachhang);
-
     }
 }

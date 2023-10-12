@@ -1,9 +1,6 @@
 package com.example.poloman.controller;
 
-import com.example.poloman.entity.ChiTietSanPham;
 import com.example.poloman.entity.GioHang;
-import com.example.poloman.entity.GioHangChiTiet;
-import com.example.poloman.service.ChiTietSanPhamService;
 import com.example.poloman.service.GioHangService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

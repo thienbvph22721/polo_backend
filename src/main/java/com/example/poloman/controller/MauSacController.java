@@ -1,6 +1,5 @@
 package com.example.poloman.controller;
 
-import com.example.poloman.entity.KhuyenMai;
 import com.example.poloman.entity.MauSac;
 import com.example.poloman.service.MauSacService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +7,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/mausac")

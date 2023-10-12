@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 
 import java.sql.Date;
 
-import java.sql.Date;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity

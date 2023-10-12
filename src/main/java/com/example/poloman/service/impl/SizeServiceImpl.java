@@ -27,6 +27,5 @@ public class SizeServiceImpl implements SizeService {
     @Override
     public void delete(Integer masize) {
         sizeRepository.deleteById(masize);
-
     }
 }

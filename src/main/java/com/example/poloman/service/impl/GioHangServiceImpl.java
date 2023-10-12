@@ -27,6 +27,5 @@ public class GioHangServiceImpl implements GioHangService {
     @Override
     public void delete(Integer magiohang) {
         gioHangRepository.deleteById(magiohang);
-
     }
 }

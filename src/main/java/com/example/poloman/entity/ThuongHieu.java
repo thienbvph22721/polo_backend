@@ -13,9 +13,9 @@ import lombok.NoArgsConstructor;
 
 public class ThuongHieu {
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Integer mathuonghieu;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer mathuonghieu;
 
-        private String tenthuonghieu;
+    private String tenthuonghieu;
 }

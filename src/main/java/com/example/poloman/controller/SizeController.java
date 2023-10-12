@@ -1,6 +1,5 @@
 package com.example.poloman.controller;
 
-import com.example.poloman.entity.SanPham;
 import com.example.poloman.entity.Size;
 import com.example.poloman.service.SizeService;
 import org.springframework.beans.factory.annotation.Autowired;

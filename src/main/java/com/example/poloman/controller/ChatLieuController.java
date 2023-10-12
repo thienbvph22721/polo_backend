@@ -21,7 +21,7 @@ public class ChatLieuController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<?> add(@RequestBody ChatLieu chatLieu){
+    public ResponseEntity<?> add(@RequestBody ChatLieu chatLieu) {
         chatLieuService.save(chatLieu);
         return ResponseEntity.ok(chatLieu);
     }

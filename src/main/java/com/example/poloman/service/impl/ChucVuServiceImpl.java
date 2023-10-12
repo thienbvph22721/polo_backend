@@ -27,6 +27,5 @@ public class ChucVuServiceImpl implements ChucVuService {
     @Override
     public void delete(Integer machucvu) {
         chucVuRepository.deleteById(machucvu);
-
     }
 }

@@ -27,6 +27,5 @@ public class MauSacServiceImpl implements MauSacService {
     @Override
     public void delete(Integer mamausac) {
         mauSacRepository.deleteById(mamausac);
-
     }
 }

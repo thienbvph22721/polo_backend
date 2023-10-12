@@ -27,6 +27,5 @@ public class NhanVienServiceImpl implements NhanVienService {
     @Override
     public void delete(Integer manhanvien) {
         nhanVienRepository.deleteById(manhanvien);
-
     }
 }

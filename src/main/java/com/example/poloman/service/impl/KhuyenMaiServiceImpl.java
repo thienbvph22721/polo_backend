@@ -28,6 +28,5 @@ public class KhuyenMaiServiceImpl implements KhuyenMaiService {
     @Override
     public void delete(UUID id) {
         khuyenMaiRepository.deleteById(id);
-
     }
 }

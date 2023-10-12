@@ -27,6 +27,5 @@ public class HoaDonChiTietServiceImpl implements HoaDonChiTietService {
     @Override
     public void delete(Integer mahoadon) {
         hoaDonChiTietRepository.deleteById(mahoadon);
-
     }
 }

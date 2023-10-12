@@ -27,6 +27,5 @@ public class HoaDonServiceImpl implements HoaDonService {
     @Override
     public void delete(Integer mahoadon) {
         hoaDonRepository.deleteById(mahoadon);
-
     }
 }

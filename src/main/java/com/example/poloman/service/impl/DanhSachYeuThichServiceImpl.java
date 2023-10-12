@@ -28,6 +28,5 @@ public class DanhSachYeuThichServiceImpl implements DanhSachYeuThichService {
     @Override
     public void delete(UUID madanhsach) {
         danhSachYeuThichRepository.deleteById(madanhsach);
-
     }
 }

@@ -27,6 +27,5 @@ public class SanPhamServiceImpl implements SanPhamService {
     @Override
     public void delete(Integer masanpham) {
         sanPhamRepository.deleteById(masanpham);
-
     }
 }

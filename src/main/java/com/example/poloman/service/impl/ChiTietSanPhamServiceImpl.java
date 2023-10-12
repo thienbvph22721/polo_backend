@@ -27,6 +27,5 @@ public class ChiTietSanPhamServiceImpl implements ChiTietSanPhamService {
     @Override
     public void delete(Integer mactsp) {
         chiTietSanPhamRepository.deleteById(mactsp);
-
     }
 }

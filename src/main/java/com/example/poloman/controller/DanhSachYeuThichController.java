@@ -1,11 +1,7 @@
 package com.example.poloman.controller;
 
 
-import com.example.poloman.entity.ChatLieu;
-import com.example.poloman.entity.ChucVu;
 import com.example.poloman.entity.DanhSachYeuThich;
-import com.example.poloman.entity.DongSP;
-import com.example.poloman.service.ChatLieuService;
 import com.example.poloman.service.DanhSachYeuThichService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -27,7 +23,7 @@ public class DanhSachYeuThichController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<?> add(@RequestBody DanhSachYeuThich danhSachYeuThich){
+    public ResponseEntity<?> add(@RequestBody DanhSachYeuThich danhSachYeuThich) {
         danhSachYeuThichService.save(danhSachYeuThich);
         return ResponseEntity.ok(danhSachYeuThich);
     }

@@ -1,6 +1,5 @@
 package com.example.poloman.controller;
 
-import com.example.poloman.entity.ChatLieu;
 import com.example.poloman.entity.ChiTietSanPham;
 import com.example.poloman.service.ChiTietSanPhamService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +22,7 @@ public class ChiTietSanPhamController {
 
 
     @PostMapping("/add")
-    public ResponseEntity<?> add(@RequestBody ChiTietSanPham chiTietSanPham){
+    public ResponseEntity<?> add(@RequestBody ChiTietSanPham chiTietSanPham) {
         chiTietSanPhamService.save(chiTietSanPham);
         return ResponseEntity.ok(chiTietSanPham);
     }
